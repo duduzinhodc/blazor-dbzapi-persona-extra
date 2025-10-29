@@ -1,0 +1,7 @@
+C:\Users\User\Documents\BlazorDbzApiPersonaExtra\obj\Debug\net9.0\BlazorDbzApiPersonaExtra.csproj.AssemblyReference.cache
+C:\Users\User\Documents\BlazorDbzApiPersonaExtra\obj\Debug\net9.0\rpswa.dswa.cache.json
+C:\Users\User\Documents\BlazorDbzApiPersonaExtra\obj\Debug\net9.0\BlazorDbzApiPersonaExtra.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\User\Documents\BlazorDbzApiPersonaExtra\obj\Debug\net9.0\BlazorDbzApiPersonaExtra.AssemblyInfoInputs.cache
+C:\Users\User\Documents\BlazorDbzApiPersonaExtra\obj\Debug\net9.0\BlazorDbzApiPersonaExtra.AssemblyInfo.cs
+C:\Users\User\Documents\BlazorDbzApiPersonaExtra\obj\Debug\net9.0\BlazorDbzApiPersonaExtra.csproj.CoreCompileInputs.cache
+C:\Users\User\Documents\BlazorDbzApiPersonaExtra\obj\Debug\net9.0\BlazorDbzApiPersonaExtra.MvcApplicationPartsAssemblyInfo.cache

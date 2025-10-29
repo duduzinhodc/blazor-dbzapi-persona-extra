@@ -1,0 +1,54 @@
+@page "/"
+@using BlazorDbzApiPersonaExtra.Models
+@inject BlazorDbzApiPersonaExtra.Services.DragonBallService Api
+
+<h3>Dragon Ball - Buscar Personagem</h3>
+
+<div class="mb-3">
+    <input type="number" @bind="id" placeholder="Digite o ID do personagem" />
+    <button @onclick="BuscarPersonagem">Buscar</button>
+</div>
+
+@if (isLoading)
+{
+    <p>Carregando...</p>
+}
+else if (character != null)
+{
+    <div class="card" style="width: 18rem;">
+        <img src="@character.Image" class="card-img-top" alt="@character.Name" />
+        <div class="card-body">
+            <h5 class="card-title">@character.Name</h5>
+            <p class="card-text">Raça: @character.Race</p>
+        </div>
+    </div>
+}
+else if (notFound)
+{
+    <p>Personagem não encontrado.</p>
+}
+
+@code {
+    private int id;
+    private Character? character;
+    private bool isLoading = false;
+    private bool notFound = false;
+
+    private async Task BuscarPersonagem()
+    {
+        if (id <= 0) return;
+
+        isLoading = true;
+        notFound = false;
+        character = null;
+
+        var result = await Api.GetCharacterAsync(id);
+
+        if (result != null)
+            character = result;
+        else
+            notFound = true;
+
+        isLoading = false;
+    }
+}
